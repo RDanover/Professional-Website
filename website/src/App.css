@@ -1,20 +1,46 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+.hero-section{
+  background-image: url("./Components/E52CA882-131C-4E13-836B-2B2EB6A6DC45.jpg");
+  width:100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text-large{
+  font-size: 70px;
+  color:white;
+}
+
+.hero-text-small{
+  font-size:large;
+  color:white;
+}
+.section-heading{
+  color:white;
+  width:100%;
+  margin-left:10px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.about-blurb{
+  font-size:large;
+  color:white;
+  margin-left:10px;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #404142;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +54,70 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-row{
+  display:flex;
+  flex-direction: row;
+}
+
+.skill{
+  margin:5px;
+  background-color:rgb(225, 225, 229);
+  border-radius: 25px;
+  min-width: 150px;
+  min-height: 150px;
+}
+.experiences{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience{
+  background-color: rgba(255, 255, 255, 0.685);
+  width:700px;
+  min-height: 200px;
+  border-radius: 25px;
+  display:flex;
+}
+
+.experience-details{
+  display:flex;
+  flex-direction: column;
+  width:200px;
+}
+
+.experience-title{
+  margin-left:10px;
+  margin-top: 75px;
+  font-size: Large;
+  font-weight: bold;
+}
+
+.experience-company{
+  margin-left:10px;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+.experience-date{
+  margin-left:10px;
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: light;
+}
+.experience-image{
+  border-radius: 25px;
+  width: 500px;
+  height:200px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
