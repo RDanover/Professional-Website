@@ -1,13 +1,15 @@
-html{
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
-}
+
 .hero-section{
-  background-image: url("./Components/E52CA882-131C-4E13-836B-2B2EB6A6DC45.jpg");
+  background-image: url("./Images/PIA04921_orig.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
   width:100%;
-  height: 800px;
+  height: 600px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -22,8 +24,9 @@ html{
   font-size:large;
   color:white;
 }
+
 .section-heading{
-  color:white;
+  color:lightgray;
   width:100%;
   margin-left:10px;
   font-size: 40px;
@@ -31,10 +34,14 @@ html{
   text-decoration: underline;
 }
 .about-blurb{
+
+  width:100%;
+  text-align: center;
   font-size:large;
-  color:white;
+  color:lightgray;
   margin-left:10px;
 }
+
 .App {
   text-align: center;
 }
@@ -68,11 +75,11 @@ html{
 
 .skill{
   margin:5px;
-  background-color:rgb(225, 225, 229);
   border-radius: 25px;
-  min-width: 150px;
-  min-height: 150px;
+  width:150px;
+  height:150px;
 }
+
 .experiences{
   width: 100%;
   display: flex;
@@ -82,8 +89,8 @@ html{
 }
 
 .experience{
-  background-color: rgba(255, 255, 255, 0.685);
-  width:700px;
+  background-color: lightgray;
+  width:900px;
   min-height: 200px;
   border-radius: 25px;
   display:flex;
@@ -92,12 +99,13 @@ html{
 .experience-details{
   display:flex;
   flex-direction: column;
-  width:200px;
+  width:300px;
 }
 
 .experience-title{
   margin-left:10px;
-  margin-top: 75px;
+  margin-top: 40px;
+  height:50px;
   font-size: Large;
   font-weight: bold;
 }
@@ -114,10 +122,12 @@ html{
   font-size: medium;
   font-weight: light;
 }
+
 .experience-image{
   border-radius: 25px;
-  width: 500px;
-  height:200px;
+  margin-top:25px;
+  width: 600px;
+  height:150px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
