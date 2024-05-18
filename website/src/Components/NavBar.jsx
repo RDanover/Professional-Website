@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import '../Styling/navbar.css'
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState("hero-section");
+  const [activeLink, setActiveLink] = useState("home");
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
@@ -31,13 +31,13 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {renderNavLink("hero-section", "Home")}
+            {renderNavLink("home", "Home")}
             {renderNavLink("about", "About")}
             {renderNavLink("education", "Education")}
             {renderNavLink("skills", "Skills")}
-            {renderNavLink("experiences", "Experiences")}
+            {renderNavLink("experiences-projects", "Experiences/Projects")}
             {renderNavLink("interests", "Interests")}
-            {renderNavLink("contact", "Contact")}
+            {renderNavLink("links", "Links")}
           </Nav>
         </Navbar.Collapse>
       </Container>

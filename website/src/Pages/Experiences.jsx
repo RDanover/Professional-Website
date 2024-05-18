@@ -3,7 +3,7 @@ import ga_img from '../Images/General_Atomics_Aeronautical_Systems,_Inc.png'
 import Experience from '../Components/Experience';
 function Experiences() {
   return (
-    <section id="experiences">
+    <section id="experiences-projects">
       <div className="section-heading">
         <p>Experience/Projects</p>
       </div>

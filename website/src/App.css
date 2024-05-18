@@ -1,47 +1,62 @@
 html {
   scroll-behavior: smooth;
 }
-.hero-section{
+
+.hero-section {
   background-image: url("./Images/PIA04921_orig.jpg");
-  background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin:0;
-  width:100%;
-  height: 600px;
+  margin: 0;
+  width: 100%;
+  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding:0;
 }
 
-.hero-text-large{
-  font-size: 70px;
-  color:white;
+.hero-text-large {
+  font-size: 90px;
+  color: white;
 }
 
-.hero-text-small{
-  font-size:large;
-  color:white;
+.hero-text-small {
+  font-size: 28px;
+  color: white;
 }
 
-.section-heading{
-  color:lightgray;
-  width:100%;
-  margin-left:10px;
+.section-heading {
+  color: lightgray;
+  width: 100%;
+  margin-left: 10px;
+  margin-top:150px;
+  margin-bottom:75px;
   font-size: 40px;
   font-weight: bold;
   text-decoration: underline;
 }
-.about-blurb{
 
-  width:100%;
+#about-heading {
+  color: lightgray;
+  width: 100%;
+  margin-left: 10px;
+  margin-top:30px;
+  margin-bottom:75px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.about-blurb {
+  width: 100%;
   text-align: center;
-  font-size:large;
-  color:lightgray;
-  margin-left:10px;
+  font-size: 28px;
+  color: lightgray;
+  padding-left:50px;
+  padding-right:50px;
 }
 
 .App {
@@ -63,26 +78,27 @@ html {
   color: #61dafb;
 }
 
-.skills{
-  display:flex;
+.skills {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.skill-row{
-  display:flex;
+.skill-row {
+  display: flex;
   flex-direction: row;
 }
 
-.skill{
-  margin:5px;
+.skill {
+  margin: 5px;
   border-radius: 25px;
-  width:150px;
-  height:150px;
+  width: 150px;
+  height: 150px;
+  position: relative;
 }
 
-.experiences{
+.experiences {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -90,62 +106,145 @@ html {
   justify-content: center;
 }
 
-.experience{
+.experience {
   background-color: lightgray;
-  width:900px;
+  width: 900px;
   min-height: 200px;
   border-radius: 25px;
-  display:flex;
+  display: flex;
+  position: relative;
+  overflow: hidden; /* Ensure the overlay doesn't overflow */
 }
 
-.experience-details{
-  display:flex;
+.experience-details {
+  display: flex;
   flex-direction: column;
-  width:300px;
+  width: 300px;
 }
 
-.experience-title{
-  margin-left:10px;
+.experience-title {
+  margin-left: 10px;
   margin-top: 40px;
-  height:50px;
+  height: 50px;
   font-size: Large;
   font-weight: bold;
 }
 
-.experience-company{
-  margin-left:10px;
+.experience-company {
+  margin-left: 10px;
   margin-top: 10px;
   font-size: medium;
 }
 
-.experience-date{
-  margin-left:10px;
+.experience-date {
+  margin-left: 10px;
   margin-top: 10px;
   font-size: medium;
   font-weight: light;
 }
 
-.experience-image{
+.experience-image {
   border-radius: 25px;
-  margin-top:25px;
+  margin-top: 25px;
   width: 600px;
-  height:150px;
+  height: 150px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-@media(min-width:992px) {
-  .background-nav{
+@media (min-width: 992px) {
+  .background-nav {
     display: none;
   }
 }
 
-.background-nav{
+.background-nav {
   height: 56px;
   background-color: black;
-  width: 1000%;
+  width: 150%;
   position: fixed;
   top: 0;
   z-index: 1000;
   background-size: cover;
+}
+
+.experience-text {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.experience:hover .experience-text {
+  opacity: 1;
+}
+
+.experience-text h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.experience-text p {
+  font-size: 18px;
+  color: white;
+}
+
+.skill-text {
+  width: 104%;
+  height: 104%;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.skill-text:hover {
+  opacity: 1;
+}
+
+.skill-text h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.skill-text p {
+  font-size: 18px;
+  color: white;
+}
+
+.contact-holder{
+  height:100px;
+  width:100%;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon{
+  margin:5px;
+}
+
+.small-image{
+  height:50px;
+  width: 50px;
+}
+
+#resume-link{
+  color:white;
+  font-size: 28px;
 }

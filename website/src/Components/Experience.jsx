@@ -8,7 +8,11 @@ const Experience = (props) => {
         <span className="experience-company">{props.company}</span>
         <span className="experience-date">{props.date}</span>
       </div>
-      <img className="experience-image" src={props.img}alt={props.alt} />
+      <img className="experience-image" src={props.img} alt={props.alt} />
+      <div className="experience-text">
+          <h1>{props.heading}</h1>
+          <p>{props.txt}</p>
+      </div>    
     </div>
   );
 }

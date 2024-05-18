@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section id="hero">
+    <section id="home">
       <div className="hero-section">
         <span className="hero-text-large">Rachel Danover</span>
         <span className="hero-text-small">Aerospace Software Developer</span>
