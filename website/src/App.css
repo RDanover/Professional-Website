@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 .hero-section{
   background-image: url("./Images/PIA04921_orig.jpg");
   background-size: 100% 100%;
@@ -130,4 +132,20 @@
   height:150px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+}
+
+@media(min-width:992px) {
+  .background-nav{
+    display: none;
+  }
+}
+
+.background-nav{
+  height: 56px;
+  background-color: black;
+  width: 1000%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-size: cover;
 }
