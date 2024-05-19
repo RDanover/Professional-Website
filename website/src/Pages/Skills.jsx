@@ -15,14 +15,14 @@ function Skills() {
 
       <div className="skills">
         <div className="skill-row">
-        <Skill img={cpp_img}/>
-        <Skill img={python_img}/>
-        <Skill img={java_script_img}/>
+        <Skill img={cpp_img} alt="c++" txt="5 years of experience"/>
+        <Skill img={python_img} alt="python" txt="2 years of experience"/>
+        <Skill img={java_script_img} alt="Java Script" txt="1 year of experience"/>
         </div>
         <div className="skill-row">
-        <Skill img={cs_img}/>
-        <Skill img={java_img}/>
-        <Skill img={c_img}/>
+        <Skill img={c_img} alt="C" txt="1 year of experience"/>
+        <Skill img={java_img} alt="Java" txt="1 year of experience"/>
+        <Skill img={cs_img} alt="c#" txt=".5 year of experience"/>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
 import React from 'react'
-import default_img from '../Images/default-placeholder-2.png';
+import bike from '../Images/Bike_icon(white).png'
+import gaming from '../Images/Gaming-PNG-HD-Image.png'
+import music from '../Images/music-note-2-xxl.png'
 import Skill from '../Components/Skill';
 
 function Interests() {
@@ -11,14 +13,9 @@ function Interests() {
 
       <div className="skills">
         <div className="skill-row">
-        <Skill img={default_img}/>
-        <Skill img={default_img}/>
-        <Skill img={default_img}/>
-        </div>
-        <div className="skill-row">
-        <Skill img={default_img}/>
-        <Skill img={default_img}/>
-        <Skill img={default_img}/>
+        <Skill img={bike} alt="biking" txt="I love biking along the beach"/>
+        <Skill img={music} alt= "music" txt="I listen to music any chance I get"/>
+        <Skill img={gaming} alt="gaming" txt="I enjoy playing games like Stardew Valley"/>
         </div>
       </div>
     </section>
